@@ -3,7 +3,7 @@ import Child1 from './Child1';
 import Child2 from './Child2';
 
 const ParentComponent = () => {
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption, setSelectedOption] = useState("");
 
   const handleButtonClick = (option) => {
     setSelectedOption(option);
@@ -19,7 +19,7 @@ const ParentComponent = () => {
         // selectedOption={selectedOption}
         onButtonClick={handleButtonClick}
       />
-      <p>Selected Option:{selectedOption}</p>
+      <p>Selected Option: {selectedOption}</p>
     </div>
   );
 };
