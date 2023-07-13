@@ -12,11 +12,11 @@ const ParentComponent = () => {
   return (
     <div className="parent">
       <Child1
-        selectedOption={selectedOption}
+        // selectedOption={selectedOption}
         onButtonClick={handleButtonClick}
       />
       <Child2
-        selectedOption={selectedOption}
+        // selectedOption={selectedOption}
         onButtonClick={handleButtonClick}
       />
       <p>Selected Option:{selectedOption}</p>
